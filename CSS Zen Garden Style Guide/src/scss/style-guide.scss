@@ -1,6 +1,7 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
@@ -10,6 +11,16 @@ $secondary-font:'Lily Script One', cursive;
 $linked-font:'Merriweather', serif;
 
 /* -------------------------------- 
+=======
+@import 'partials/pictures';
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-2: #19191a; // Dark Blue
+$color-3: #e4655f; // Red
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+>>>>>>> a73665508d948249cf1579e15d70ceda7bf09c8d
 
 Colors
 
