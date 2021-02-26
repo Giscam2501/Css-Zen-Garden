@@ -1,0 +1,66 @@
+
+
+header {
+    background-color:#79D7B5;
+  }
+  
+  .cd-logo {
+    /* logo box style */
+    background-color: #E3DFFF;
+    width: 120px;
+
+  }
+  
+  .cd-main-nav {
+    /* main navigation background color - full screen on small devices */
+    background: #E3DFFF;
+  
+    li a {
+      color: #E3DFFF;
+      border-color: lighten(#E3DFFF, 5%);
+    }
+  
+  }
+  
+  .cd-nav-trigger span {
+    /* hamburger menu */
+    background-color: #E3DFFF;
+  
+    &::before,
+    &::after {
+      /* upper and lower lines */
+      background-color: #E3DFFF;
+    }
+  }
+  
+  .nav-is-visible .cd-nav-trigger span {
+    /* hide line in the center on mobile when nav is visible */
+    background-color: rgba(#E3DFFF, 0);
+  
+    &::before,
+    &::after {
+      /* preserve visibility of upper and lower lines - close icon */
+      background-color: rgba(#E3DFFF, 1);
+    }
+  }
+  
+  .cd-download {
+    /* download button top-right visible on big devices */
+    background-color: lighten(#E3DFFF, 10%);
+  
+    .no-touch &:hover {
+      background-color: lighten(#E3DFFF, 15%);
+    }
+  
+    span {
+      /* tooltip */
+      background: #E3DFFF;
+      color: #E3DFFF;
+  
+      &::before {
+        /* right arrow color */
+        border-color: #E3DFFF;
+      }
+    }
+  }
+  

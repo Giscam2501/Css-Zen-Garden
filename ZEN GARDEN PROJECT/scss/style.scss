@@ -1,0 +1,226 @@
+/* ZEN GARDEN PROJECT
+* GROUP 5 - PAMELLA RODRIGUES / GISELA CAMACHO 
+* WDD 331 - BYU - IDAHO - WINTER 2021
+/* --------------------------*/
+@import 'partials/reset';
+@import 'partials/prefix-mixins';
+@import 'partials/layout';
+@import 'partials/colors';
+@import 'partials/navigation';
+@import 'partials/typography';
+@import 'partials/buttons';
+@import 'partials/form';
+@import 'partials/basic-style';
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+// fonts
+$primary-font: 'Petit Formal Script',
+cursive;
+$secondary-font:'Lily Script One',
+cursive;
+$linked-font:'Merriweather',
+serif;
+
+/* /////////////// basic elements /////////////// */
+
+body {
+    margin: 0;
+    padding: 0;
+    font: $secondary-font;
+    background-color:$color-5;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font: $primary-font;
+    display: none;
+}
+
+h3 {
+    height: 38px;
+    margin: 0;
+    padding: 0;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+abbr {
+    border: none;
+}
+
+a {
+    color: $color-4;
+    text-decoration: underline;
+}
+
+a:hover,
+a:hover {
+    color: $color-1;
+  
+}
+
+
+/* ////////////// layout ///////////////// */
+
+.page-wrapper {
+    width: 772px;
+    margin: 0 auto;
+    padding: 0 13px;
+    position: relative;
+    text-align: left;
+}
+
+header {
+    background-color: $color-2;
+    color:$color-1;
+    width: 100%;
+    height: 178px;
+    
+}
+header [role="banner"]{
+    font-family: $primary-font;
+    color:$color-1;
+    font-size: 20px;
+}
+
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    width: 546px;
+    background-color: $color-5;
+    background-repeat: repeat-y;
+    margin: 0 0 2px 226px;
+    color: $color-3;
+    display: block;
+    padding: 0;
+}
+
+footer {
+    width: 539px;
+    margin: 5px 0 0 226px;
+    text-align: right;
+    padding: 3px 14px 43px 0;
+}
+
+.sidebar {
+    background-color: $color-4;
+    font-weight: normal;
+	padding: 15px 10px 0 0;
+	position: absolute;
+	top: 193px;
+	width: 221px;
+}
+.sidebar h3 {
+    padding-left: 10px;
+}
+
+.sidebar a, .sidebar a:link, .sidebar a:visited  {
+    color:$color-3;
+    text-decoration: underline;
+}
+
+.sidebar a:hover, .sidebar a:active, .sidebar a:focus  {
+    text-decoration: none;
+}
+
+.sidebar ul li {
+    font-size: 90%;
+    list-style: square;
+    
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+    margin: 0 0 2px 0;
+}
+
+.summary p,
+.explanation p,
+.benefits p {
+    padding: 0 15px 10px 77px;
+}
+
+.preamble p,
+.participation p,
+.requirements p {
+    padding: 0 85px 10px 17px;
+}
+
+.requirements p:nth-child(6) {
+    padding: 0 85px 10px 17px;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 6px 0 10px 0;
+    
+}
+
+.sidebar li a {
+    padding-left: 7px;
+    
+    text-decoration: none;
+}
+
+.sidebar li a:hover {
+    text-decoration: underline;
+}
+
+.summary p:first-child {
+    padding-top: 14px;
+   
+}
+
+.summary p:last-child {
+    padding-bottom: 20px;
+    
+}
+
+.design-selection li a {
+    display: block;
+    font-weight: bold;
+    background-position: 0 0.6em;
+}
+
+.design-selection a.designer-name {
+
+}
+
+footer a {
+    text-decoration: none;
+    color: $color-2;
+    background-color: $color-4;
+    border: 1px solid $color-5;
+    padding: 3px 3px;
+    height: 100%;
+}
+
+footer a:hover {
+    background-color: $color-4;
+    color:$color-3;
+}
+
+.extra1,
+.extra2,
+.extra3,
+.extra4,
+.extra5,
+.extra6 {
+    display: none;
+}
+
+

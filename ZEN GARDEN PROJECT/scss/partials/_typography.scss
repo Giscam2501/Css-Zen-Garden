@@ -1,0 +1,50 @@
+/* -------------------------------- 
+xTypography 
+-------------------------------- */
+// fonts
+$primary-font: 'Petit Formal Script', cursive;
+$secondary-font:'Lily Script One', cursive;
+$linked-font:'Merriweather', serif;
+
+//colors
+$color-1: #79D7B5; // Medium Aquamarine
+$color-2: #EF6F6C; // Light Coral
+$color-3: #320E3B; // Russian Violet
+$color-4: #E3DFFF; // Lavander Web
+$color-5: #FFFBBD; // Cream
+
+h1,
+h2 {
+    font-family: $secondary-font;
+    color: $color-2;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 0;
+
+}
+p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: lighten($color-3, 25%);
+}
+
+section>h2::before {
+    /* number before each section title */
+    color: darken($color-3, 15%);
+}
+a {
+        color: $color-1;
+        text-decoration: underline;
+}
+
