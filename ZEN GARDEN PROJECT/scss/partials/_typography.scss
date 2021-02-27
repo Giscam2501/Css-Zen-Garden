@@ -16,7 +16,7 @@ $color-5: #FFFBBD; // Cream
 h1,
 h2 {
     font-family: $secondary-font;
-    color: $color-2;
+    color: $color-3;
 }
 
 h1 {
@@ -24,6 +24,7 @@ h1 {
     font-weight: 300;
     line-height: 1.2;
     margin: 0 0 0.4em;
+    text-align: center;
 
 }
 
@@ -31,6 +32,7 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin: 1em 0;
+    text-align: center;
 
 }
 p {
