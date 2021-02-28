@@ -113,7 +113,7 @@ header [role="banner"]{
 footer {
     width: 539px;
     margin: 5px 0 0 226px;
-    text-align: right;
+    text-align: center;
     padding: 3px 14px 43px 0;
     background-image: url("../assets/Flower1.png");
 }
@@ -205,16 +205,13 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: $color-2;
-    background-color: $color-4;
-    border: 1px solid $color-5;
+    color: $color-3;
     padding: 3px 3px;
     height: 100%;
 }
 
 footer a:hover {
-    background-color: $color-4;
-    color:$color-3;
+    color:$color-2;
 }
 
 .extra1,
