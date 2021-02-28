@@ -64,3 +64,50 @@ header {
     }
   }
   
+
+  .sidebar li {
+    list-style:none;
+    padding:6px 0 10px 0;
+    
+    }
+    
+    .sidebar li a {
+    padding-left:7px;
+    
+    text-decoration:none;
+    }
+    
+    .sidebar li a:hover {
+    text-decoration:underline;
+    }
+
+    .design-selection li a {
+      display:block;
+      font-weight:bold;
+      background-position:0 0.6em;
+      }
+
+          
+    .design-selection a.designer-name {
+      display:inline;
+      color:#666666;
+      padding:0;
+      background:none;
+      background-color:#ffffff;
+      }
+      
+      footer a{
+      text-decoration:none;
+      color:#888888;
+      background-color:#dfdfdf;
+      border:1px solid #bdbdbd;
+      padding:3px 3px;
+      height:100%;
+      }
+      
+      footer a:hover{
+      background-color:#ebebeb;
+      color:#777777;
+      }
+      
+      .extra1, .extra2, .extra3, .extra4, .extra5, .extra6{display:none;}
