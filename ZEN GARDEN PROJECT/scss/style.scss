@@ -11,6 +11,7 @@
 @import 'partials/buttons';
 @import 'partials/form';
 @import 'partials/basic-style';
+@import 'partials/flower';
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
@@ -30,20 +31,27 @@ body {
     margin:0;
     padding: top 20px;
     font:75%/1.4 $secondary-font;
-    background-image:url("../assets/sides.jpg");
     text-align:center;
     color: $color-3;
     }
     
-    h1,h2 {
+    h1, h2 {
         font-family: $primary-font;
-        color:$color-4;
-        display:none;
+        color:$color-3;
+    }
+    h1{
+      font-size: 30px;
+      text-emphasis-color: black;
+    }
+    h2{
+      font-size: 20px;
+      background-color:rgb(247, 243, 239, .8);
+
     }
     
     h3 {
-        font-family: $primary-font;
-        color:$color-4;
+    font-family: $primary-font;
+    color:$color-3;
     height:38px;
     margin:0;
     padding:0;
@@ -59,12 +67,12 @@ body {
         margin:0;padding:0;}
     
     abbr {
-        color:$color-4;
+        color: blue;
         border:none;
     }
     
     a {
-        font-family: $linked-font;
+    font-family: $linked-font;
     color:$color-5;
     background-color:$color-2;
     text-decoration:underline;
@@ -102,8 +110,12 @@ body {
     background-color:$color-1;
     background-repeat:repeat-y;
     margin:0 0 2px 226px;
-    color:$color-4;
-    display:block;padding:0;
+    color:$color-3;
+    display:block;
+    padding-top:0px;
+    }
+    .preamble{
+        padding-top:60px;
     }
     
     footer {
@@ -123,6 +135,7 @@ body {
     
     .design-selection, .design-archives, .zen-resources {
     margin:0 0 2px 0;
+    font-size: 14px;
     }
     
     .summary p, .explanation p, .benefits p {
@@ -155,16 +168,12 @@ body {
     
     .summary p:first-child {
     padding-top:14px;
-    background:
-        url("../assets/Flower2.png") top no-repeat,
-        url("../assets/Flower2.png") right repeat-y;
+    top: 100px;
     }
     
     .summary p:last-child {
     padding-bottom:20px;
-    background:
-    url("../assets/Flower2.png") bottom no-repeat,
-        url("../assets/sides.jpg") right repeat-y;
+    top:100px;
     }
     
     .design-selection li a {
@@ -188,6 +197,7 @@ body {
     border:1px solid $color-4;
     padding:3px 3px;
     height:100%;
+    font-size: 15px;
     }
     
     footer a:hover{
@@ -203,16 +213,11 @@ body {
     .summary p:first-child {
     padding-top:14px;
     position: relative;
-    background:url("../assets/sides.jpg") top no-repeat;
     }
     
     .summary p:last-child {
     padding-bottom:20px;
     }
-     /* right image */
-     .summary p, .explanation p , .benefits p {
-        background:url("../assets/Flower2.png") right repeat-y;
-        }
       
 
     
@@ -226,7 +231,6 @@ body {
     content: ' ';
     display: block;
     position: absolute;
-    top: 20px;
     bottom: 0;
     right: 0;
     width:20px;
@@ -241,13 +245,10 @@ body {
     right: 0;
     height:20px;
     width: 100%;
-    height: 20px;
-    margin-top: -20px;
     }
     
     .design-selection ul, .design-archives ul, .zen-resources ul{
-    margin:0;
+    margin-top: 40px;
     padding:0 25px 20px 17px;
-   
     }
     
