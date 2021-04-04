@@ -1,27 +1,35 @@
-// breakpoints
-   
-$S:     768px;   
-$M:     1024px;     
-$L:     1600px;   
-
-// media queries
-
-@mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
+$color-1: #79D7B5; // Medium Aquamarine
+$color-2: #EF6F6C; // Light Coral
+$color-3: #320E3B; // Russian Violet
+$color-4: #473e85; // Lavander Web
+$color-5: #FFFBBD; // Cream
+ 
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+    left:10px;
+    width:10px;
   }
-  @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; } 
+  .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    width:50px;
+    left:-200px;
+    position: absolute;
+    }
   }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; } 
+@media only screen and (max-width: 1000px) {
+  .page-wrapper {
+    width:200px;
+    text-align:left;
+    font-size: 10px;
   }
+  .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    width:50px;
+    background-color:$color-1;
+    left: 0px;
+    position: relative;
+    font-size: 10px;
+    }
 }
+@media only screen and (max-width: 1200px) {
 
-// super light grid - it works with the .cd-container class inside style.scss
-
-@mixin column($percentage, $float-direction:left) {
-  width: 100% * $percentage;
-  float: $float-direction;
 }
-
